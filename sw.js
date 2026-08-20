@@ -1,4 +1,4 @@
-const CACHE = "vxchat-v1";
+const CACHE = "vxchat-v2";
 const ASSETS = ["./", "./index.html", "./login.html", "./register.html", "./chat.html", "./css/style.css"];
 
 self.addEventListener("install", (event) => {
