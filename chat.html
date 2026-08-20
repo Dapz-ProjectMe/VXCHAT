@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css"><title>Chat — VXCHAT</title>
+</head>
+<body class="chat-page">
+  <header class="topbar">
+    <div class="brand-inline"><span class="brand-dot">VX</span> VXCHAT</div>
+    <div class="top-actions">
+      <button id="profileButton" class="icon-btn" title="Profile">◎</button>
+      <button id="logoutButton" class="icon-btn" title="Logout">↪</button>
+    </div>
+  </header>
+
+  <main class="chat-layout">
+    <aside class="sidebar">
+      <div class="user-card">
+        <div id="myAvatar" class="avatar">VX</div>
+        <div><strong id="myName">Loading...</strong><span id="myUsername" class="muted"></span></div>
+      </div>
+      <div class="search-box">
+        <input id="userSearch" placeholder="Search @username..." autocomplete="off">
+      </div>
+      <div id="searchResults" class="results"></div>
+      <div class="sidebar-label">Conversations</div>
+      <div id="conversationList" class="conversation-list"></div>
+    </aside>
+
+    <section class="conversation">
+      <div id="emptyState" class="empty-state">
+        <div class="empty-icon">💬</div>
+        <h2>Select a conversation</h2>
+        <p>Search for a username to start chatting.</p>
+      </div>
+
+      <div id="chatWindow" class="chat-window hidden">
+        <div class="chat-header">
+          <div id="chatAvatar" class="avatar">VX</div>
+          <div><strong id="chatName"></strong><span id="chatUsername" class="muted"></span></div>
+        </div>
+        <div id="messages" class="messages"></div>
+        <form id="messageForm" class="message-form">
+          <input id="messageInput" placeholder="Write a message..." maxlength="4000" autocomplete="off">
+          <button class="send-btn" type="submit">➤</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="js/chat.js"></script>
+</body>
+</html>

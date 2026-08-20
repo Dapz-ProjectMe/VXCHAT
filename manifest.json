@@ -1,0 +1,10 @@
+{
+  "name": "VXCHAT",
+  "short_name": "VXCHAT",
+  "description": "Username-first public chat application.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080812",
+  "theme_color": "#6d5dfc",
+  "icons": []
+}

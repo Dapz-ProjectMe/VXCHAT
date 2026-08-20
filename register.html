@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css"><title>Create account — VXCHAT</title>
+</head>
+<body class="auth-page">
+  <section class="auth-card">
+    <a class="back" href="index.html">← VXCHAT</a>
+    <div class="brand-mark small">VX</div>
+    <h1>Create account</h1>
+    <p class="muted">No phone number required.</p>
+    <form id="registerForm">
+      <label>Username<input id="username" autocomplete="username" placeholder="daffa" minlength="3" maxlength="24" required></label>
+      <label>Display name<input id="displayName" placeholder="Daffa" maxlength="50" required></label>
+      <label>Password<input id="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required></label>
+      <button class="btn primary full" type="submit">Create account</button>
+      <p id="message" class="form-message"></p>
+    </form>
+    <p class="switch">Already have an account? <a href="login.html">Sign in</a></p>
+  </section>
+  <script type="module" src="js/register.js"></script>
+</body>
+</html>

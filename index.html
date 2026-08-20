@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6d5dfc">
+  <meta name="description" content="VXCHAT — public username-based chat.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <title>VXCHAT</title>
+</head>
+<body>
+  <main class="landing">
+    <div class="brand-mark">VX</div>
+    <p class="eyebrow">USERNAME-FIRST CHAT</p>
+    <h1>Chat without<br><span>phone numbers.</span></h1>
+    <p class="lead">Create a unique username and start connecting with people.</p>
+    <div class="actions">
+      <a class="btn primary" href="register.html">Create account</a>
+      <a class="btn ghost" href="login.html">Sign in</a>
+    </div>
+    <p class="muted">VXCHAT V1 · Built for the web and Android PWA.</p>
+  </main>
+  <script>
+    if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(console.error);
+  </script>
+</body>
+</html>
